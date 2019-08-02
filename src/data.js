@@ -97,7 +97,6 @@ LoadData();
 document.getElementById('container-slide-buttons').classList.remove('hide');
 
 const btnFamousMovies = document.getElementById('btn-famous-movies');
-
 btnFamousMovies.addEventListener('click', () =>{
     document.getElementById('title-famous').classList.remove('hide');
     document.getElementById('container-cards').classList.remove('hide');
@@ -111,7 +110,6 @@ btnFamousMovies.addEventListener('click', () =>{
 });
 
 const btnAwardedMovies = document.getElementById('btn-awarded-movies');
-
 btnAwardedMovies.addEventListener('click', () =>{
     document.getElementById('title-awarded').classList.remove('hide');
     document.getElementById('container-cards').classList.remove('hide');
@@ -125,7 +123,6 @@ btnAwardedMovies.addEventListener('click', () =>{
 });
 
 const btnBlockbusterMovies = document.getElementById('btn-blockbuster-movies');
-
 btnBlockbusterMovies.addEventListener('click', () =>{
     document.getElementById('title-blockbuster').classList.remove('hide');
     document.getElementById('container-cards').classList.remove('hide');
@@ -138,7 +135,6 @@ btnBlockbusterMovies.addEventListener('click', () =>{
 });
 
 const btnRealisticMovies = document.getElementById('btn-realistic-movies');
-
 btnRealisticMovies.addEventListener('click', () =>{
     document.getElementById('title-realistic').classList.remove('hide'); 
     document.getElementById('container-cards').classList.remove('hide');
@@ -152,7 +148,6 @@ btnRealisticMovies.addEventListener('click', () =>{
 });
 
 const btnOrder = document.getElementById('sort-btn');
-
 btnOrder.addEventListener('click', ()=>{
     let orderAll = document.getElementById('filter').value;
     let orderSelected = document.getElementById('order-type').value;
