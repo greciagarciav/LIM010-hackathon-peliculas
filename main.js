@@ -2,11 +2,11 @@
 const loginbox = document.getElementById('loginbox');
 const login = document.getElementById('login');
 const password = document.getElementById('password');
-const buttonUno = document.getElementById('clave');
+const clave = document.getElementById('clave');
 const error = document.getElementById('error');
 const interfaz2 = document.getElementById('interfaz2');
 let contador = 0;
-buttonUno.addEventListener('click', () => {
+clave.addEventListener('click', () => {
   if (login.value === 'LABORATORIA' && password.value === 'LABORATORIA') {
     loginbox.classList.add('hide');
     interfaz2.classList.remove('hide');
