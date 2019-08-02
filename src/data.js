@@ -16,7 +16,7 @@ window.scifi = {
 getSciFiData : (arrMovies) => {
         arrMovies.map((idMovie) => {
     
-            fetch('http://www.omdbapi.com/?i=' + idMovie + ' &apikey=715025ae')
+            fetch('https://www.omdbapi.com/?i=' + idMovie + ' &apikey=715025ae')
             .then( response => response.json())
             .then( movies => {          
                     arrMoviesTemp.push(movies);           
