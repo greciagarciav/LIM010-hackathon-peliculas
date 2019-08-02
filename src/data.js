@@ -25,8 +25,6 @@ getSciFiData : (arrMovies) => {
     return arrMoviesTemp;
 },
 
-
-
 orderData : (array, orderAll, condicion) => {
 
 const asc = (a,b) => {
@@ -50,6 +48,7 @@ if (orderAll === 'Todos'){
     }
     
 },
+
 showData : (arrMovies) => {
     containerMovies.innerHTML = ''; 
     arrMovies.forEach(movies => {
@@ -86,16 +85,14 @@ showData : (arrMovies) => {
     }
 };
 
-// First call to load data
-LoadData();
-
-function LoadData(){
+const LoadData = () => {
     arrMostFamous = scifi.getSciFiData(mostFamous);
     arrMostAwarded = scifi.getSciFiData(mostAwarded);
     arrBlockbuster = scifi.getSciFiData(blockbuster);
     arrMoreRealistic = scifi.getSciFiData(moreRealistic);
 }
 
+LoadData();
 
 document.getElementById('container-slide-buttons').classList.remove('hide');
 
