@@ -6,74 +6,38 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
-a{
-    color: rgba(1, 1, 151, 0.897);
-    text-decoration: none;
-    font-weight: bold;
-    
+.maincontainer{
+    position: relative;
+    width: 250px;
+    height: 320px;
 }
-
-.loginbox{
-    display: flex;
-    background-color: #38fb89c2;
-    
-}
-.box{
-    margin: auto;
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
-    width: 260px;
-    padding: 20px;
-    background: rgba(248, 246, 246, 0.623);
-    border-radius: 4px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, .50);
-    font-size: 16px;
-}
-
-.right{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.center{
-    display: flex;
-    justify-content: center;
-}
-
-.data{
+.thecard{
+    position: absolute;
+    height: 100%;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: none;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
 }
+.thecard:hover{
+    transform: rotateY(180deg);
 
-.btn-login{
-    width: 107%;
-    height: 36px;
-    background:#a6ffcb;
-    padding: 10px 20px;
-    margin: 30px 0;
-    border: none;
-    border-radius: 5px;
 }
-.logo-peliculas{
-    height: 174px;
-    width: 278px;
-}
-.letra{
-    font-weight: bold;
-    font-family: 'Open Sans', sans-serif;
-}
-.hide {
-    display: none;
-}
+.thefront{
+    position: absolute;
+    height: 100%;
+    width:100%;
+    backface-visibility: hidden;
+    background: red;
+    color: #333;
 
-
-/* desde aqui mi cara2 */
-
-.cara2{
-    background-color: red;
+}
+.theback{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background: blue;
+    color: #333;
+    transform: rotateY(180deg);
 
 }
