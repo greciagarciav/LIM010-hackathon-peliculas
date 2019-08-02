@@ -101,7 +101,6 @@ btnFamousMovies.addEventListener('click', () =>{
     document.getElementById('title-realistic').classList.add('hide');
     arrMostFamous = ''; 
     arrMostFamous = scifi.getSciFiData(mostFamous);
- console.log(arrMostFamous);
 });
 
 const btnAwardedMovies = document.getElementById('btn-awarded-movies');
@@ -115,7 +114,6 @@ btnAwardedMovies.addEventListener('click', () =>{
     document.getElementById('title-realistic').classList.add('hide'); 
     arrMostAwarded = ''; 
     arrMostAwarded = scifi.getSciFiData(mostAwarded);
- console.log(arrMostAwarded);
 });
 
 const btnBlockbusterMovies = document.getElementById('btn-blockbuster-movies');
@@ -129,7 +127,6 @@ btnBlockbusterMovies.addEventListener('click', () =>{
     document.getElementById('title-realistic').classList.add('hide');    
     arrBlockbuster = ''; 
     arrBlockbuster = scifi.getSciFiData(blockbuster);
- console.log(arrBlockbuster);
 });
 
 const btnRealisticMovies = document.getElementById('btn-realistic-movies');
@@ -143,7 +140,6 @@ btnRealisticMovies.addEventListener('click', () =>{
     document.getElementById('title-blockbuster').classList.add('hide'); 
     arrMoreRealistic = ''; 
     arrMoreRealistic = scifi.getSciFiData(moreRealistic);
- console.log(arrMoreRealistic);
 });
 
 const btnOrder = document.getElementById('sort-btn');
@@ -153,7 +149,7 @@ btnOrder.addEventListener('click', ()=>{
     let orderSelected = document.getElementById('order-type').value;
     let arrData = arrMoviesTemp;
     let orderedData = scifi.orderData(arrData, orderAll, orderSelected );
-    scifi.getSciFiData(arrMoviesTemp);
+    scifi.getSciFiData(orderedData);
 })
 
 
