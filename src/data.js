@@ -93,14 +93,14 @@ const btnFamousMovies = document.getElementById('btn-famous-movies');
 
 btnFamousMovies.addEventListener('click', () =>{
     document.getElementById('title-famous').classList.remove('hide');
-    document.getElementById('form').classList.remove('hide');
-    document.getElementById('container-movies').classList.remove('hide');
+    document.getElementById('container-cards').classList.remove('hide');
     document.getElementById('container-slide-buttons').classList.add('hide');
     document.getElementById('title-awarded').classList.add('hide');
     document.getElementById('title-blockbuster').classList.add('hide');
     document.getElementById('title-realistic').classList.add('hide');
     arrMostFamous = ''; 
     arrMostFamous = scifi.getSciFiData(mostFamous);
+    document.getElementById('sort-menu').classList.remove('hide');
 });
 
 const btnAwardedMovies = document.getElementById('btn-awarded-movies');
@@ -114,6 +114,7 @@ btnAwardedMovies.addEventListener('click', () =>{
     document.getElementById('title-realistic').classList.add('hide'); 
     arrMostAwarded = ''; 
     arrMostAwarded = scifi.getSciFiData(mostAwarded);
+    document.getElementById('sort-menu').classList.remove('hide');
 });
 
 const btnBlockbusterMovies = document.getElementById('btn-blockbuster-movies');
@@ -127,6 +128,7 @@ btnBlockbusterMovies.addEventListener('click', () =>{
     document.getElementById('title-realistic').classList.add('hide');    
     arrBlockbuster = ''; 
     arrBlockbuster = scifi.getSciFiData(blockbuster);
+    document.getElementById('sort-menu').classList.remove('hide');
 });
 
 const btnRealisticMovies = document.getElementById('btn-realistic-movies');
@@ -140,6 +142,7 @@ btnRealisticMovies.addEventListener('click', () =>{
     document.getElementById('title-blockbuster').classList.add('hide'); 
     arrMoreRealistic = ''; 
     arrMoreRealistic = scifi.getSciFiData(moreRealistic);
+    document.getElementById('sort-menu').classList.remove('hide');
 });
 
 const btnOrder = document.getElementById('sort-btn');

@@ -21,19 +21,7 @@
 <header class="head"><img src="img/pelicifi.png" class="encabezado"alt="encabezado"></header>
 
 <main> 
-        <form class="hide" id = "form">
-                <label class="white bold">Ordenar:</label>
-                <select id="filter">
-                    <option>Todos</option>
-                </select>
-                <label class="white bold">Orden:</label>
-                <select id="order-type">
-                  <option>Ordenar A-Z</option>
-                  <option>Ordenar Z-A</option>
-                </select>
-                <button type="button" id="sort-btn">ORDENAR</button>
-        </form>
-    
+            
 <!-- SEGUNDA INTERFAZ -->
 <section class="hide" id="container-slide-buttons">
     <div class="cara2">
@@ -98,18 +86,36 @@
 </section>
 
 
-<section class="container-fluid center-block" id="container-cards">
+<section class="container-fluid hide" id="container-cards">
+<div >
     <h1 class="hide title-container" id="title-famous">CIENCIA FICCIÓN: PELICULAS MÁS POPULARES</h1>
     <h1 class="hide title-container" id="title-awarded">CIENCIA FICCIÓN: PELICULAS MÁS PREMIADAS</h1>
     <h1 class="hide title-container" id="title-blockbuster">CIENCIA FICCIÓN: PELICULAS MÁS TAQUILLERAS</h1>
     <h1 class="hide title-container" id="title-realistic">CIENCIA FICCIÓN: PELICULAS MÁS REALISTAS</h1>
-    <div class="card-columns container-fluid center-block" id="container-movies"></div>
+    <div  class="hide" id="sort-menu">
+            <form class="">
+                    <label class="form">Ordenar:</label>
+                    <select id="filter">
+                        <option>Todos</option>
+                    </select>
+                    <label class="form">Orden:</label>
+                    <select id="order-type">
+                      <option>Ordenar A-Z</option>
+                      <option>Ordenar Z-A</option>
+                    </select>
+                    <button type="button" id="sort-btn">ORDENAR</button>
+            </form>
+        </div >
+</div>
+
+    <div class="container-fluid" id="container-movies"></div>
+
 </section>
 
 </main> 
 
 
-<footer>
+<footer class="footer">
         <p class="follow-us">SÍGANOS</p>
         <div class="wrapper-social-media">
           <a href="#" class="a-social-media-icon"><img src="img/facebook-icon.png"
